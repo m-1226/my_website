@@ -1,0 +1,133 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    Dedicated and enthusiastic Junior SOC Analyst (Tier 1) with a strong passion
+    for cybersecurity and a solid educational foundation. Skilled in security
+    monitoring, incident investigation, and utilizing SIEM tools to detect and
+    respond to potential threats. Eager to apply theoretical knowledge gained
+    through coursework and contribute to organizational security in a dynamic
+    SOC environment
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Business Information System (BIS)"
+      subtitle="2019 to 2023 at Faculty of Commerce, Zamalek, Helwan University, Egypt"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Job Title at Project or Company Name"
+      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Job Title at Project or Company Name"
+      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Job Title at Project or Company Name"
+      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident.
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a
+        href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-F36NAUS3KO.png"
+        target="_blank">Junior SOC Analyst (Tier 1)</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-SRUQT9KHWS.png"
+        target="_blank"
+      >
+        Junior Penetration Tester</a
+      >
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="md:columns-2 columns-2 mx-6 mb-10">
+    <li>✔️ Security Monitoring</li>
+    <li>✔️ Incident Investigation and Triage</li>
+    <li>✔️ SIEM Tools (e.g., Splunk, ELK)</li>
+    <li>✔️ Threat Detection and Analysis</li>
+    <li>✔️ Vulnerability Assessment</li>
+    <li>✔️ Network and System Monitoring</li>
+    <li>✔️ Security Policies and Procedures</li>
+    <li>✔️ Analytical Thinking</li>
+    <li>✔️ Communication and Collaboration</li>
+    <li>✔️ Technical Aptitude (Operating Systems, Networking, Scripting)</li>
+    <li>✔️ MITRE ATT&CK Framework</li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Programming Skills</div>
+  </div>
+
+  <ul class="md:columns-2 columns-2 mx-6 mb-10">
+    <li>✔️ Bash</li>
+    <li>✔️ Python</li>
+    <li>✔️ Html, CSS, JavaScript</li>
+    <li>✔️ Powershell</li>
+    <li>✔️ Flutter</li>
+    <li>✔️ Dart</li>
+    <li>✔️ Linux</li>
+    <li>✔️ FastTyping</li>
+  </ul>
+
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Achievements</div>
+  </div>
+  <ul class="md:columns-1 columns-2 mx-6 mb-10">
+    <li>🏆 Top 1% on Tryhackme (30 On Egypt)</li>
+    <li>🏆 Top 2 on LetsDefend on Egypt</li>
+    <li>🏆 Top 2% on CyberDefenders</li>
+  </ul></BaseLayout>

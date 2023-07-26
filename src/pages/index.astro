@@ -1,0 +1,122 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const last_posts = posts.slice(0, 3);
+---
+
+<BaseLayout sideBarActiveItemID="home">
+  <div class="pb-12 mt-5">
+    <div class="text-xl py-1">Hi there 👋, Welcome to my Space</div>
+    <div class="text-5xl font-bold">I'm Mahmoud Ashraf</div>
+    <div class="text-3xl py-3 font-bold" id="typing-text"></div>
+
+    <style>
+      #typing-text {
+        color:#335eea;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      .typing-animation {
+        animation: typing 1.2s steps(20) infinite;
+      }
+
+      @keyframes typing {
+        0% {
+          width: 0;
+        }
+        100% {
+          width: 300px; /* Adjust the width to match the text length */
+        }
+      }
+    </style>
+
+    <script>
+      const textArray = [
+        "Junior SOC Analyst",
+        "Flutter Developer",
+        "Content Creator",
+      ];
+      const typingText = document.getElementById("typing-text");
+      let index = 0;
+      let animationDelay = 1000; 
+
+      function animateText() {
+        typingText.innerText = textArray[index];
+        index = (index + 1) % textArray.length;
+        typingText.classList.add("typing-animation"); 
+        setTimeout(function () {
+          typingText.classList.remove("typing-animation"); 
+        }, 1200);
+        setTimeout(animateText, animationDelay + 1500); 
+      }
+
+      // Start the animation
+      animateText();
+    </script>
+
+    <div class="py-2">
+      <text class="text-lg">
+        Experienced Cybersecurity enthusiast and Flutter Developer with a
+        passion for expanding my knowledge through reading, especially in the
+        field of cybersecurity.
+      </text>
+    </div>
+    <div class="mt-8">
+      <a class="btn" href="https://www.linkedin.com/in/mahmoud-ashraf-yahia/" target="_blank">
+        Let's connect!</a
+      >
+    </div>
+  </div>
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-2">My lastest projects {"</>"}</div>
+  </div>
+
+  <HorizontalCard
+    title="Demo Project 1"
+    img="/post_img.webp"
+    desc="Coming Soon"
+    url="#"
+    badge="NEW"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Demo Project 2"
+    img="/post_img.webp"
+    desc="Staytuned"
+    url="#"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Demo Project 3"
+    img="/post_img.webp"
+    desc="Coming Soon"
+    url="#"
+    badge="FOSS"
+  />
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+  </div>
+
+  {
+    last_posts.map((post) => (
+      <>
+        <HorizontalCard
+          title={post.data.title}
+          img={post.data.heroImage}
+          desc={post.data.description}
+          url={"/blog/" + post.slug}
+          target="_self"
+          badge={post.data.badge}
+        />
+        <div class="divider my-0" />
+      </>
+    ))
+  }
+</BaseLayout>
