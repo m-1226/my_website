@@ -43,6 +43,68 @@ import { Image } from "@astrojs/image/components";
       }
       <div class="divider my-2"></div>
       <slot />
+
+      <!-- Heart Button -->
+      <div class="heart-container my-2">
+        <button class="heart-button" id="heartButton" aria-label="Like">
+          <span class="heart-icon">❤️</span>
+          <span class="like-count">0</span>
+        </button>
+      </div>
     </article>
   </main>
+
+  <style>
+    /* Add the CSS styles here */
+    .heart-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .heart-button {
+      display: flex;
+      align-items: center;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .heart-icon {
+      margin-right: 0.25rem;
+      font-size: 2rem; /* Adjust the size as desired */
+    }
+
+    .like-count {
+      margin-left: 0.25rem;
+    }
+
+    /* You can add more styles here */
+  </style>
+
+<script>
+  // JavaScript to handle the heart button click and like count
+  const heartButton = document.getElementById("heartButton");
+  const likeCountElement = document.querySelector(".like-count");
+
+  let likeCount = 0;
+  let liked = false;
+
+  function handleHeartClick() {
+    if (liked) {
+      likeCount--;
+      liked = false;
+    } else {
+      likeCount++;
+      liked = true;
+    }
+
+    likeCountElement.textContent = likeCount;
+    heartButton.classList.toggle("liked", liked);
+    heartButton.style.color = liked ? "red" : ""; // Change color to red if liked, otherwise remove the color
+  }
+
+  heartButton.addEventListener("click", handleHeartClick);
+</script>
+
 </BaseLayout>
