@@ -1,5 +1,5 @@
 ---
-title: "Acoustic CTF CyberDefenders"
+title: "Acoustic CTF"
 description: "Coming Soon, Staytuned"
 pubDate: "July 26 2023"
 heroImage: "/Acoustic.jpg"
