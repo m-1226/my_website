@@ -32,8 +32,11 @@ import { Image } from "@astrojs/image/components";
       <h1 class="title my-2 text-4xl font-bold">{title}</h1>
       {pubDate && <time>{displayDate}</time>}
       <br />
-      {badge && <div class="badge badge-secondary my-1">{badge}</div>}
-      {
+      {badge && badge.map((badgeItem, index) => (
+        <div key={index} class="badge badge-secondary my-1 mx-1">
+          {badgeItem}
+        </div>
+      ))}      {
         updatedDate && (
           <div>
             {" "}

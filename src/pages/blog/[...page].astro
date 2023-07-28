@@ -33,7 +33,7 @@ const { page } = Astro.props;
               desc={post.data.description}
               url={"/blog/" + post.slug}
               target="_self"
-              badge={post.data.badge}
+              badge={post.data && post.data.badge?.[0]}
             />
             <div class="divider my-0" />
           </>
