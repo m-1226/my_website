@@ -2,8 +2,11 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
+import { projectsData } from "./projectsCard";
 
-const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
 
 const last_posts = posts.slice(0, 3);
 ---
@@ -16,7 +19,7 @@ const last_posts = posts.slice(0, 3);
 
     <style>
       #typing-text {
-        color:#335eea;
+        color: #335eea;
         white-space: nowrap;
         overflow: hidden;
       }
@@ -43,16 +46,16 @@ const last_posts = posts.slice(0, 3);
       ];
       const typingText = document.getElementById("typing-text");
       let index = 0;
-      let animationDelay = 1000; 
+      let animationDelay = 1000;
 
       function animateText() {
         typingText.innerText = textArray[index];
         index = (index + 1) % textArray.length;
-        typingText.classList.add("typing-animation"); 
+        typingText.classList.add("typing-animation");
         setTimeout(function () {
-          typingText.classList.remove("typing-animation"); 
+          typingText.classList.remove("typing-animation");
         }, 1200);
-        setTimeout(animateText, animationDelay + 1500); 
+        setTimeout(animateText, animationDelay + 1500);
       }
 
       // Start the animation
@@ -67,39 +70,37 @@ const last_posts = posts.slice(0, 3);
       </text>
     </div>
     <div class="mt-8">
-      <a class="btn" href="https://www.linkedin.com/in/mahmoud-ashraf-yahia/" target="_blank">
+      <a
+        class="btn"
+        href="https://www.linkedin.com/in/mahmoud-ashraf-yahia/"
+        target="_blank"
+      >
         Let's connect!</a
       >
     </div>
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My lastest projects {"</>"}</div>
+    <div class="text-3xl w-full font-bold mb-2">
+      My lastest projects {"</>"}
+    </div>
   </div>
 
-  <HorizontalCard
-    title="ArabiaType"
-    img="/post_img.webp"
-    desc="The First minimalist, customizable Arabic Typing Test Website in the arabic world."
-    url="#"
-    badge="Coming Soon 🔥"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Staytuned"
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Coming Soon"
-    url="#"
-    badge="FOSS"
-  />
-
+  {
+    projectsData.slice(-3).map((project, index) => (
+      <div>
+        <HorizontalCard
+          key={index}
+          title={project.title}
+          img={project.img}
+          desc={project.desc}
+          url={project.url}
+          badge={project.badge}
+        />
+        <div class="divider my-0" />
+      </div>
+    ))
+  }
   <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
   </div>
@@ -114,7 +115,7 @@ const last_posts = posts.slice(0, 3);
           url={"/blog/" + post.slug}
           target="_self"
           badge={post.data && post.data.badge?.[0]}
-                  />
+        />
         <div class="divider my-0" />
       </>
     ))
