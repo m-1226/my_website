@@ -9,7 +9,7 @@ export const projectsData = [
     {
         title: "BIS Hub",
         img: "/post_img.webp",
-        desc: "The first app that collects & orgainze the materials for BIS Studtens in one Hub.",
+        desc: "The first app that collects & orgainze the materials for BIS Students in one Hub.",
         url: "#",
         badge: "Coming Soon 🔥",
     },
