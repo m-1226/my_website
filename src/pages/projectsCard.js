@@ -1,5 +1,12 @@
 export const projectsData = [
     {
+        title: "NotesHub",
+        img: "/noteshub.png",
+        desc: "Notes App made with Flutter & Hive.",
+        url: "https://github.com/m-1226/NotesHub",
+        badge: "Flutter",
+    },
+    {
         title: "ArabiaType",
         img: "/post_img.webp",
         desc: "The First minimalist, customizable Arabic Typing Test Website in the arabic world.",
