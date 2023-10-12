@@ -1,5 +1,12 @@
 export const projectsData = [
     {
+        title: "BIS Hub",
+        img: "/bis-hub.png",
+        desc: "The first app that collects & orgainze the materials for BIS Students in one Hub.",
+        url: "https://play.google.com/store/apps/details?id=bis.Hub",
+        badge: "New 🔥",
+    },
+    {
         title: "NotesHub",
         img: "/noteshub.png",
         desc: "Notes App made with Flutter & Hive.",
@@ -13,19 +20,4 @@ export const projectsData = [
         url: "#",
         badge: "Coming Soon 🔥",
     },
-    {
-        title: "BIS Hub",
-        img: "/post_img.webp",
-        desc: "The first app that collects & orgainze the materials for BIS Students in one Hub.",
-        url: "#",
-        badge: "Coming Soon 🔥",
-    },
-    {
-        title: "Demo Project 3",
-        img: "/post_img.webp",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        url: "#",
-        badge: "test",
-    }
-
 ];
