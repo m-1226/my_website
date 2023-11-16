@@ -1,15 +1,39 @@
 ---
-title: "Demo Item 2"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-custom_link_label: "Custom Btn"
-custom_link: "https://customurl.com/"
+title: "Student Hub"
+description: "The Ultimate all in one notion template for Student life."
+custom_link_label: "Live Preview"
+custom_link: "https://mahmoudashrafyahia.notion.site/mahmoudashrafyahia/Student-Hub-Preview-69d61789919b4142a502c9a09659ee1c"
 updatedDate: "Sep 11 2022"
-pricing: "$10"
-oldPricing: "$25.5"
-checkoutUrl: "https://checkouturl.com/"
-heroImage: "/itemPreview.png"
+pricing: "$15"
+oldPricing: "$45"
+checkoutUrl: "https://mahmoudashraf.gumroad.com/l/student_hub_notion_template"
+heroImage: "/studentHub_preview.png"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+**Fully Customizable Template** as you simply edit and make student hub as your prefrences 🔥
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+**What’s included?**
+
+• Monthly and weekly calendar
+• Testing calendar
+• Task manager
+• Today page
+• Course schedule
+• Course pages and notebooks
+• Assignments page
+• Bookmarks page
+• 30+ student resources
+
+**What can I do?**
+
+• Keep track of due dates and exam dates
+• Schedule tasks and reminders
+• Take notes in course notebooks
+• Save files and assignment in course folders
+• Bookmark websites, articles, photos, and videos
+
+#### Arabic Version will be made soon 🔥
+
+Personal License
+
+for Individual use only !!

@@ -7,17 +7,10 @@ export const projectsData = [
         badge: "New 🔥",
     },
     {
-        title: "NotesHub",
-        img: "/noteshub.png",
-        desc: "Notes App made with Flutter & Hive.",
-        url: "https://github.com/m-1226/NotesHub",
-        badge: "Flutter",
-    },
-    {
-        title: "ArabiaType",
-        img: "/post_img.webp",
-        desc: "The First minimalist, customizable Arabic Typing Test Website in the arabic world.",
-        url: "#",
-        badge: "Coming Soon 🔥",
+        title: "الأجندة القضائية",
+        img: "/lawyer_agenda.png",
+        desc: "🔥 الأجندة القضائية أجندة المحامي الذكية، أجندتك بقت رقمية",
+        url: "https://play.google.com/store/apps/details?id=agenda.app",
+        badge: "New 🔥",
     },
 ];
