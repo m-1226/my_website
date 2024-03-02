@@ -13,4 +13,11 @@ export const projectsData = [
         url: "https://play.google.com/store/apps/details?id=agenda.app",
         badge: "New 🔥",
     },
+    {
+        title: "Kryptor - كريبتور",
+        img: "/itemPreview.png",
+        desc: "🔥 تطبيق عربي لحفظ كلمات السر بطريقة مشفرة وآمنة",
+        url: "https://play.google.com/store/apps/details?id=agenda.app",
+        badge: "قريبا 🔥",
+    },
 ];
